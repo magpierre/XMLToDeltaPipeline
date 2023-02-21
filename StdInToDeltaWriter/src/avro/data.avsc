@@ -1,0 +1,49 @@
+[
+  {
+    "type": "record",
+    "namespace": "com.magnusp",
+    "name": "Level",
+    "fields": [
+      { "name": "node", "type": ["null", "string"], "default": null},
+      { "name": "attr_key", "type": ["null", "string"], "default": null},
+      { "name": "attr_value", "type": ["null", "string"], "default": null}
+    ]
+},
+  {
+    "type": "record",
+    "namespace": "com.magnusp",
+    "name": "Levels",
+    "fields": [
+      { "name": "L1", "type": ["null", "Level"], "default": null},
+      { "name": "L2", "type": ["null", "Level"], "default": null },
+      { "name": "L3", "type": ["null", "Level"], "default": null },
+      { "name": "L4", "type": ["null", "Level"], "default": null },
+      { "name": "L5", "type": ["null", "Level"], "default": null },
+      { "name": "L6", "type": ["null", "Level"], "default": null },
+      { "name": "L7", "type": ["null", "Level"], "default": null },
+      { "name": "L8", "type": ["null", "Level"], "default": null },
+      { "name": "L9", "type": ["null", "Level"], "default": null },
+      { "name": "L10", "type": ["null", "Level"], "default": null },
+      { "name": "L11", "type": ["null", "Level"], "default": null },
+      { "name": "L12", "type": ["null", "Level"], "default": null },
+      { "name": "L13", "type": ["null", "Level"], "default": null },
+      { "name": "L14", "type": ["null", "Level"], "default": null },
+      { "name": "L15", "type": ["null", "Level"], "default": null },
+      { "name": "L16", "type": ["null", "Level"], "default": null },
+      { "name": "L17", "type": ["null", "Level"], "default": null},
+      { "name": "L18", "type": ["null", "Level"], "default": null },
+      { "name": "L19", "type": ["null", "Level"], "default": null },
+      { "name": "L20", "type": ["null", "Level"], "default": null }
+    ]
+},
+{
+    "type": "record",
+    "namespace": "com.magnusp",
+    "name": "DataExport",
+    "fields": [
+      { "name": "rownr", "type": "long" },
+      { "name": "levels", "type": "Levels" },
+      { "name": "key", "type": "string" },
+      { "name": "value", "type": "string" }
+    ]
+}]
