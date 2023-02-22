@@ -90,7 +90,7 @@ public class App {
                     System.out.println("Str:" + str[0]);
                 }
                 e.setKey(str[1]);
-                e.setValue(str[2].replace("¶", ","));
+                e.setValue(str[2].replace("¡", ","));
                 writer.write(e);
             }
             writer.close();
@@ -164,7 +164,7 @@ public class App {
                 String[] kval = NodeAttr[1].split("=");
                 blevel = blevel.setAttrKey(kval[0]);
                 if(kval.length > 1) {
-                    blevel = blevel.setAttrValue(kval[1]);
+                    blevel = blevel.setAttrValue(kval[1].replace("¡", ","));
                 }
             }
             Level level = blevel.build();
